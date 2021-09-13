@@ -1,0 +1,174 @@
+:root {
+    --primary: #D4ECDD;
+    --secondary: #345B63;
+    --accent: #112031;
+    --extra: #5ABCDD;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    margin: 0;
+    color: var(--accent);
+    background-color: var(--primary);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+a {
+    color: var(--extra);
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary);
+}
+
+#header-img {
+    width: 5rem;
+}
+
+#logo, #nav-bar {
+    padding: 0 1rem;
+}
+
+#nav-bar a {
+    margin: auto .8rem;
+    font-weight: bold;
+}
+
+#nav-bar a:hover {
+    color: var(--primary);
+}
+
+section h2 {
+    text-align: center;
+}
+
+#home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h1 {
+    font-size: 2em;
+}
+
+#hero {
+    width: 55%;
+    position: relative;
+    /* Image is hiding below the fixed header */
+    top: 2em;
+    z-index: -1;
+}
+
+#services, #about, #contact {
+    margin: 0 1em;
+}
+
+#services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+.service {
+    padding: 25px;
+    background-color: var(--accent);
+    color: var(--primary);
+    border: 5px solid var(--secondary);
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    width: min(500px, 80vw);
+    aspect-ratio: 3/2;
+}
+
+.form-element {
+    margin: 1rem auto;
+    width: 80%;
+}
+
+.form-element > * {
+    display: block;
+    width: 100%;
+}
+
+.form-element label {
+    margin-bottom: .25rem;
+}
+
+.form-element > input, 
+textarea {
+    padding: .8rem .85rem;
+    outline: none;
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
+    color: var(--accent);
+}
+
+#submit {
+    font-size: .9em;
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+footer {
+    background-color: var(--accent);
+    color: var(--primary);
+    padding: 1em;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    #home {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #home h1 {
+        font-size: 1.8em;
+        text-align: center;
+        order: 1;
+    }
+
+    #hero {
+        width: auto;
+        top: 5em;
+        /* this image has space on left-side */
+        right: 2em;
+    }
+}
+
+@media (max-width: 650px) {
+    #header {
+        flex-direction: column;
+    }
+    
+    #nav-bar {
+        height: 2em;
+    }
+
+    #hero {
+        width: auto;
+        top: 5em;
+    }
+}

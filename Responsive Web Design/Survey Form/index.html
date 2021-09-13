@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Student Profile</h1>
+    <p id="description">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore nihil ipsa laboriosam harum perferendis,
+        maiores vel iste. Quidem, corporis dolores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum,
+        minima qui officia enim, nisi necessitatibus veritatis, cum laborum neque repellat nulla? Debitis, aspernatur.
+        Eligendi commodi a facilis, perferendis illo tempora.
+    </p>
+    <form action="" id="survey-form" autocomplete="off">
+        <div class="form-element">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-element">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email id" required>
+        </div>
+        <div class="form-element">
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" id="number" placeholder="Enter your age" min="0" max="100" required>
+        </div>
+        <div class="form-element">
+            <label for="dropdown">Qualification</label>
+            <select id="dropdown" required>
+                <option value="" selected disabled>-Qualification-</option>
+                <option value="1">10th Std</option>
+                <option value="2">Intermediate</option>
+                <option value="3">Bachelors</option>
+            </select>
+        </div>
+        <div class="form-element">
+            <p>Gender:</p>
+            <div>
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="female" value="female" required>
+                <label for="female">Female</label>
+            </div>
+        </div>
+        <div class="form-element">
+            <p>Interested FreeCodeCamp Courses: </p>
+            <div>
+                <input type="checkbox" id="course-1" value="resp-web-design">
+                <label for="course-1">Responsive Web Design</label>
+            </div>
+            <div>
+                <input type="checkbox" id="course-2" value="js">
+                <label for="course-2">JavaScript</label>
+            </div>
+            <div>
+                <input type="checkbox" id="course-3" value="libraries">
+                <label for="course-3">Frontend Libraries</label>
+            </div>
+        </div>
+        <div class="form-element">
+            <label for="about">More about you:</label>
+            <textarea id="about" placeholder="Let us know more about you" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="form-element">
+            <input type="submit" value="Submit" id="submit">
+        </div>
+    </form>
+</body>
+
+</html>

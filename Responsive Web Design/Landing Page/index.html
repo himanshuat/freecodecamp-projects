@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo">
+            <img src="https://cdn.pixabay.com/photo/2016/10/08/18/35/restaurant-1724294_960_720.png" alt="company-logo"
+                id="header-img">
+        </div>
+        <nav id="nav-bar">
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact Us</a>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Hi there👋! <br> Welcome to Restaurant</h1>
+        <div id="hero">
+            <img src="https://cdn.pixabay.com/photo/2020/03/03/09/57/city-buildings-4898207_960_720.png" alt="Restaurant">
+        </div>
+    </section>
+    <section id="services">
+        <h2>Services</h2>
+        <div id="services-grid">
+            <div class="service">
+                <i class="fas fa-table fa-3x"></i>
+                <h3>Table Service</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem nesciunt delectus dolores possimus magni quia voluptatum inventore facilis quaerat!</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-utensils fa-3x"></i>
+                <h3>Menu</h3>
+                <ul>
+                    <li>Lunch and Dinner 🍝</li>
+                    <li>Veg 🥗 and Non-veg 🍗</li>
+                    <li>Drinks 🍹</li>
+                    <li>Ice Cream 🍨</li>
+                </ul>
+            </div>
+            <div class="service">
+                <i class="fas fa-truck fa-3x"></i>
+                <h3>Home Delivery</h3>
+                <p>24 hours delivery service at your doorstep within 30-45min <br> Delivery Charges: ₹50</p>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <iframe id="video" src="https://www.youtube.com/embed/k8xRBTvbA0U"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://www.freecodecamp.com/email-submit" autocomplete="off" method="post" id="form">
+            <div class="form-element">
+                <label for="email">Email Id:</label>
+                <input name="email" type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-element">
+                <label for="message">Message: </label>
+                <textarea id="" cols="20" rows="10" required></textarea>
+            </div>
+            <div class="form-element">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>Challenge by <a target="_blank" href="https://www.freecodecamp.org/"><b>FreeCodeCamp</b></a>. Coded by <a
+            target="_blank"    href="https://www.freecodecamp.org/himanshuat"><b>Tegyalwar Himanshu</b></a> as a part of <a
+            target="_blank"    href="https://www.freecodecamp.org/learn/responsive-web-design"><b>Responsive Web Design</b></a>
+            Certification</p>
+    </footer>
+</body>
+
+</html>
