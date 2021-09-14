@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header><h1 id="topic">CSS Selectors</h1></header>
+        <ul>
+            <li><a href="#Universal_Selector" class="nav-link">Universal Selector</a></li>
+            <li><a href="#Type_Selector" class="nav-link">Type Selector</a></li>
+            <li><a href="#Grouping_Selector" class="nav-link">Grouping Selector</a></li>
+            <li><a href="#Class_Selectors" class="nav-link">Class Selectors</a></li>
+            <li><a href="#ID_Selectors" class="nav-link">ID Selectors</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Universal_Selector">
+            <header><h2>Universal Selector</h2></header>
+            <p>The universal selector (*) selects all HTML elements on the page.</p>
+            <code>* {
+                    text-align: center;
+                    color: blue;
+                }
+            </code>
+            <p>
+                <ul>
+                    <li>The CSS rule above will affect every HTML element on the page</li>
+                    <li>Every HTML element will be colored BLUE and it's text is aligned in the center</li>
+                </ul>
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Type_Selector">
+            <header><h2>Type Selector</h2></header>
+            <p>The CSS type selector matches elements by node name. In other words, it selects all elements of the given type within a document.</p>
+            <code>a {
+                    color: red;
+                }
+            </code>
+            <p>
+                <ul>
+                    <li>All anchor tags will be colored red</li>
+                </ul>
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Grouping_Selector">
+            <header><h2>Grouping Selector</h2></header>
+            <p>The grouping selector selects all the HTML elements with the same style definitions.</p>
+            <code>h1, h2, p {
+                    text-align: center;
+                    color: red;
+                }                  
+            </code>
+            <p>
+                <ul>
+                    <li>It will be better to group the selectors, to minimize the code.</li>
+                    <li>All "h1, h2, p" HTML elements will have the styles applied above</li>
+                </ul>
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Class_Selectors">
+            <header><h2>Class Selectors</h2></header>
+            <p>The CSS class selector matches elements based on the contents of their class attribute.</p>
+            <code>.spacious {
+                    margin: 2em;
+                }
+            </code>
+            <p>
+                <ul>
+                    <li>All elements with a class list that includes "spacious" will have a margin of 2em</li>
+                </ul>
+            </p>
+        </section>
+        <hr>
+        <section class="main-section" id="ID_Selectors">
+            <header><h2>ID Selectors</h2></header>
+            <p>The CSS ID selector matches an element based on the value of the element’s id attribute. In order for the element to be selected, its id attribute must match exactly the value given in the selector.</p>
+            <code>#firstname {
+                    background-color: yellow;
+                }
+            </code>
+            <p>
+                <ul>
+                    <li>Element with id "firstname" will have a yellow colored bacground</li>
+                </ul>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
