@@ -22,6 +22,8 @@ Solutions of Projects of [Responsive Web Design](https://www.freecodecamp.org/le
     * [Pen Link](https://codepen.io/himanshuat/pen/bGRYbap)
     * [Live Site](https://codepen.io/himanshuat/full/bGRYbap)
 
+**`DO LEAVE A ⭐ IF YOU FOUND IT USEFUL`**
+
 ## CERTIFICATE
 
 ![Certificate](Certificate.png)
